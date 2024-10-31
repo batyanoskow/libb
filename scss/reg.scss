@@ -1,0 +1,78 @@
+// Stylish login form
+.reg {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    transform: translateY(150%);
+    .background {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+  
+      .shape {
+        position: absolute;
+        top: -100px;
+        width: 200px;
+        height: 200px;
+        background-color: #007bff; // Change color as needed
+        border-radius: 50%;
+  
+        &:nth-child(2) {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  
+  &  div {
+      text-align: center;
+  
+    &  h3 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+  
+    &  label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+  
+   &   input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+   &   button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+  
+    &  p {
+        color: #ff0000; // Red color for error message
+        margin-bottom: 15px;
+      }
+    }
+  }
+  

@@ -1,0 +1,26 @@
+// components/SearchBar.module.scss
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+     /* Додайте відступ вниз для полегшення читання */
+  }
+  
+  .searchInput {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+  
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    }
+  }
+  

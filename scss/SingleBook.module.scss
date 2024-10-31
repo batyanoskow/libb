@@ -1,0 +1,53 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bookContainer {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .bookImage {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .bookDetails {
+    flex: 1;
+  }
+  
+  .bookTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bookAuthor {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .bookAvailability, .bookQuantity {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .bookContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .bookImage {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

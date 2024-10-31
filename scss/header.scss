@@ -1,0 +1,80 @@
+$header-background-color: #000;
+$header-text-color: #fff;
+
+.header {
+  background-color: $header-background-color;
+  color: $header-text-color;
+  padding: 20px;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      align-items: center;
+
+      > * {
+        margin-right: 20px;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &__auth {
+      a
+     {
+      
+      background-color: #333; /* Темний колір фону */
+  border: none;
+  color: #fff; /* Білий колір тексту */
+  padding: 12px 24px; /* Збільшені відступи */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Округлі кути */
+  transition-duration: 0.4s; /* Плавний перехід між станами */
+  
+      
+      &:hover {
+        background-color: #555; 
+      }
+      
+      &:active {
+       background-color: #222; 
+      }
+      
+      }
+
+      
+       
+    
+    }
+    &__logout{
+      background-color: #000; // Чорний колір
+      color: #fff; // Білий колір тексту
+      padding: 10px 20px; // Внутрішні відступи
+      border: none; // Відсутність рамки
+      border-radius: 5px; // Закруглені кути
+      cursor: pointer; // Зміна курсора при наведенні
+      transition: background-color 0.3s ease; // Плавний перехід
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      &:hover {
+        background-color: #333; // Темно-сірий колір при наведенні
+      }
+    
+      .icon {
+        margin-right: 5px; // Відступ між іконкою і текстом
+        font-size: 2em; // Розмір іконки
+        vertical-align: middle; // Вирівнювання по вертикалі
+      }
+    }
+}
+
